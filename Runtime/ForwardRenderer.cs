@@ -342,7 +342,7 @@ namespace UnityEngine.Rendering.LWRP
                 return requiresBlitForOffscreenCamera;
 
             return requiresBlitForOffscreenCamera || cameraData.isSceneViewCamera || isScaledRender || cameraData.isHdrEnabled ||
-                   !isCompatibleBackbufferTextureDimension || !cameraData.isDefaultViewport || isCapturing || Display.main.requiresBlitToBackbuffer
+                   !isCompatibleBackbufferTextureDimension || !cameraData.isDefaultViewport || isCapturing || false
                    || (renderingData.killAlphaInFinalBlit && !isStereoEnabled);
         }
 
